@@ -96,11 +96,12 @@ export default function ResumePage() {
               </Suspense>
             </SectionErrorBoundary>
 
-            <SectionErrorBoundary sectionName="Work Experience">
+            {/* Remove WorkExperience if not needed */}
+            {/* <SectionErrorBoundary sectionName="Work Experience">
               <Suspense fallback={<SectionSkeleton lines={6} />}>
                 <WorkExperience work={RESUME_DATA.work} />
               </Suspense>
-            </SectionErrorBoundary>
+            </SectionErrorBoundary> */}
 
             <SectionErrorBoundary sectionName="Education">
               <Suspense fallback={<SectionSkeleton lines={3} />}>
@@ -119,6 +120,38 @@ export default function ResumePage() {
                 <Projects projects={RESUME_DATA.projects} />
               </Suspense>
             </SectionErrorBoundary>
+
+            {/* Achievements Section */}
+            {RESUME_DATA.achievements && RESUME_DATA.achievements.length > 0 && (
+              <SectionErrorBoundary sectionName="Achievements">
+                <Suspense fallback={<SectionSkeleton lines={2} />}>
+                  <section>
+                    <h2 className="text-xl font-bold mb-2">Achievements</h2>
+                    <ul className="list-disc list-inside space-y-1">
+                      {RESUME_DATA.achievements.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+                </Suspense>
+              </SectionErrorBoundary>
+            )}
+
+            {/* Certifications Section */}
+            {RESUME_DATA.certifications && RESUME_DATA.certifications.length > 0 && (
+              <SectionErrorBoundary sectionName="Certifications">
+                <Suspense fallback={<SectionSkeleton lines={2} />}>
+                  <section>
+                    <h2 className="text-xl font-bold mb-2">Certifications</h2>
+                    <ul className="list-disc list-inside space-y-1">
+                      {RESUME_DATA.certifications.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  </section>
+                </Suspense>
+              </SectionErrorBoundary>
+            )}
           </div>
         </section>
 

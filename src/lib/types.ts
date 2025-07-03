@@ -27,6 +27,7 @@ export interface ResumeData {
     degree: string;
     start: string;
     end: string;
+    gpa?: string; // <-- Added GPA as optional
   }>;
   work: Array<{
     company: string;
@@ -47,6 +48,9 @@ export interface ResumeData {
       href: string;
     };
   }>;
+  achievements?: string[];      // <-- Added
+  certifications?: string[];    // <-- Added
+  conferences?: string[];       // <-- Added
 }
 
 // GraphQL compatible types (without React components)
@@ -66,6 +70,7 @@ export interface GraphQLEducation {
   degree: string;
   start: string;
   end: string;
+  gpa?: string; // <-- Added for GraphQL compatibility
 }
 
 export interface GraphQLWork {
@@ -104,6 +109,9 @@ export interface GraphQLMe {
   work: GraphQLWork[];
   skills: string[];
   projects: GraphQLProject[];
+  achievements?: string[];      // <-- Added
+  certifications?: string[];    // <-- Added
+  conferences?: string[];       // <-- Added
 }
 
 // Helper function to convert React content to string
@@ -135,7 +143,9 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       tel: data.contact.tel,
       social: data.contact.social.map(({ name, url }) => ({ name, url })),
     },
-    education: data.education,
+    education: data.education.map((edu) => ({
+      ...edu,
+    })),
     work: data.work.map((job) => ({
       company: job.company,
       link: job.link,
@@ -152,5 +162,7 @@ export function resumeDataToGraphQL(data: ResumeData): GraphQLMe {
       description: project.description,
       link: project.link,
     })),
+    achievements: data.achievements,
+    certifications: data.certifications
   };
 }

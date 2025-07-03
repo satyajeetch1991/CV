@@ -85,6 +85,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+       <head>
+        <link rel="icon" href="/sc.png" type="image/jpeg" />
+      </head>
       <body>
         <ErrorBoundary>{children}</ErrorBoundary>
       </body>

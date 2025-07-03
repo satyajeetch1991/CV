@@ -53,34 +53,8 @@ export const RESUME_DATA: ResumeData = {
       end: "",
     },
   ],
-  work: [
-    {
-      company: "ResumeForge (Webverse Hack 2025 Finalist)",
-      link: "",
-      badges: ["Hackathon", "Full Stack"],
-      title: "Full Stack Developer",
-      start: "2025",
-      end: "2025",
-      description: (
-        <>
-          Finalist at Webverse Hack 2025 for building ResumeForge, a resume builder platform.
-        </>
-      ),
-    },
-    {
-      company: "Smart Complaint Management System (CodeSprint Pune 2024)",
-      link: "",
-      badges: ["Hackathon", "AI"],
-      title: "Developer",
-      start: "2024",
-      end: "2024",
-      description: (
-        <>
-          3rd Place at CodeSprint Pune 2024 for developing a smart complaint management system.
-        </>
-      ),
-    },
-  ],
+  // Removed work section and replaced with projects section
+  work: [],
   skills: [
     "C++", "Python", "C", "Java", "JavaScript", "HTML/CSS", "SQL",
     "React", "Node.js", "Express.js", "MongoDB", "MySQL", "Tensorflow", "Git",
@@ -107,6 +81,7 @@ export const RESUME_DATA: ResumeData = {
         href: "https://github.com/satyajeetch1991/financial-advisor", // Replace with your actual repo if available
       },
     },
+    // You can add more projects here if you want
   ],
   achievements: [
     "🥉 CodeSprint Pune 2024 – 3rd Place – Smart Complaint Management System",
