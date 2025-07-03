@@ -1,0 +1,13 @@
+# Robots.txt for yourlink+++++++++++
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /graphql
+
+# Sitemap location
+Sitemap: yourlink+++++++++++
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
