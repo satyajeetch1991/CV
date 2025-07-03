@@ -1,4 +1,4 @@
-![cv](C:\project\cv\src\images\logos\cv.png)
+![cv](src/images/logos/cv.png)
 
 # Minimalist CV
 
