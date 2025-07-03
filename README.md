@@ -1,4 +1,4 @@
-![cv](images/your-cv-screenshot.png)
+![cv](images/cv.png)
 
 # Minimalist CV
 

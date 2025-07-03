@@ -34,14 +34,14 @@ export const RESUME_DATA: ResumeData = {
   education: [
     {
       school: "Vishwakarma Institute of Information Technology, Pune",
-      degree: "B.Tech in Artificial Intelligence",
+      degree: "B.Tech in Artificial Intelligence  - 8.73 CGPA",
       start: "2023",
       end: "2027",
       gpa: "8.73",
     },
     {
       school: "Dudhganga Valley School, Kolhapur",
-      degree: "Class 10",
+      degree: "Class 10 - 90.60%",
       start: "2020",
       end: "2021",
       gpa: "90.60%",
@@ -49,8 +49,8 @@ export const RESUME_DATA: ResumeData = {
     {
       school: "CET/JEE",
       degree: "CET – 97.62, JEE – 91.01",
-      start: "",
-      end: "",
+      start: "2021",
+      end: "2023",
     },
   ],
   // Removed work section and replaced with projects section
