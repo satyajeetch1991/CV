@@ -62,13 +62,23 @@ export const RESUME_DATA: ResumeData = {
   ],
   projects: [
     {
+      title: "CV",
+      techStack: ["Next.js 14","TypeScript","Tailwind CSS",],
+      description:
+        "A print-friendly, minimalist CV web page designed for easy sharing and professional presentation. Built with TypeScript for strong typing and maintainability, this project emphasizes clean design and ease of customization.",
+      link: {
+        label: "GitHub",
+        href: "https://github.com/satyajeetch1991/CV", // Replace with your actual repo if available
+      },
+    },
+    {
       title: "E-Commerce Website",
       techStack: ["React", "Node.js", "MongoDB", "Stripe API"],
       description:
         "Full-stack platform with secure authentication, Stripe integration, recommendation system, and optimized backend.",
       link: {
         label: "GitHub",
-        href: "https://github.com/satyajeetch1991/ecommerce", // Replace with your actual repo if available
+        href: "https://github.com/satyajeetch1991/e-commerce-backend", // Replace with your actual repo if available
       },
     },
     {
@@ -78,7 +88,7 @@ export const RESUME_DATA: ResumeData = {
         "AI-powered platform for investment advice with market analysis APIs and interactive dashboard.",
       link: {
         label: "GitHub",
-        href: "https://github.com/satyajeetch1991/financial-advisor", // Replace with your actual repo if available
+        href: "https://github.com/satyajeetch1991/Financial_Advisior", // Replace with your actual repo if available
       },
     },
     // You can add more projects here if you want
