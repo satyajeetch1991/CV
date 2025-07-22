@@ -14,7 +14,7 @@ export const RESUME_DATA: ResumeData = {
     </>
   ),
   avatarUrl: "https://avatars.githubusercontent.com/u/184357124?v=4", // Replace with your actual GitHub avatar URL
-  personalWebsiteUrl: "https://linkedin.com/in/satyajeet-chavan",
+  personalWebsiteUrl: "https://satyajeet-chavan.vercel.app/",
   contact: {
     email: "chavansatyajeet2004@gmail.com",
     tel: "7774964145",
